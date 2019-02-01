@@ -3,77 +3,69 @@
   <head>
     <title>Order your hamburgers here</title>
     <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
   </head>
   <body>
     <main>
-      <h1>Welcome to BurgerOnline</h1>
-      <section>
+      <header>
+        <img src="https://www.hixrestaurants.co.uk/wp-content/uploads/2015/10/11-microsite-4-marks-bars-1-landing-top-banner-4-1600x7681.jpg" id="header-img">
+        <h1 id="header-header">Welcome to BurgerOnline</h1>
+      </header>
+      <section id="menu">
         <h2>Select order</h2>
         <p>Select the hamburger you would like to order here</p>
-        <table>
-          <!-- <thead>
-               <tr>
-               <th>The Fire Burger</th>
-               <th>Fried Turkey Burger</th>
-               <th>A Double w/ Cheese</th>
-               </tr>
-               </thead> -->
-          <tbody>
-            <tr>
-              <td>
-                <h3 align="center">The Fire Burger</h3>
-                <img src="https://previews.123rf.com/images/jackiso/jackiso1310/jackiso131000003/23143510-spicy-hamburger.jpg" height=300 align="center">
-                <p>Ingredients:</p>
-                <ul>
-                  <li>Red meat</li>
-                  <li>Cheese</li>
-                  <li>Red chili pepper</li>
-                  <li>Vegetables</li>
-                </ul>
-                <p>This burger contains the following:</p>
-                <ul>
-                  <li>Gluten</li>
-                  <li>Lactose</li>
-                  <li>Meat</li>
-                </ul>
-              </td>
-              <td>
-                <h3 align="center">Fried Turkey Burger</h3>
-                <img src="https://assets.epicurious.com/photos/5748b2ed5a5fbbae31ae4af9/6:4/w_620%2Ch_413/shutterstock_148839410.jpg" height=300 align="center">
-                <p>Ingredients:</p>
-                <ul>
-                  <li>Turkey meat</li>
-                  <li>Red onion</li>
-                  <li>Vegetables</li>
-                </ul>
-                <p>This burger contains the following:</p>
-                <ul>
-                  <li>Gluten</li>
-                  <li>Lactose</li>
-                  <li>Meat</li>
-                </ul>
-              </td>
-              <td>
-                <h3 align="center">A Double w/ Cheese</h3>
-                <img src="data:image/jpeg;base64,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" height=300 align="center">
-                <p>Ingredients:</p>
-                <ul>
-                  <li>Red meat</li>
-                  <li>Cheese</li>
-                  <li>Pickles</li>
-                </ul>
-                <p>This burger contains the following:</p>
-                <ul>
-                  <li>Gluten</li>
-                  <li>Lactose</li>
-                  <li>Meat</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="wrapper">
+          <div class="box a">
+            <h3 align="center">The Fire Burger</h3>
+            <img src="https://previews.123rf.com/images/jackiso/jackiso1310/jackiso131000003/23143510-spicy-hamburger.jpg" height=300 align="center">
+            <p>Ingredients:</p>
+            <ul>
+              <li>Red meat</li>
+              <li>Cheese</li>
+              <li>Red chili pepper</li>
+              <li>Vegetables</li>
+            </ul>
+            <p>This burger contains the following:</p>
+            <ul class="allergy-info">
+              <li>Gluten</li>
+              <li>Lactose</li>
+              <li>Meat</li>
+            </ul>
+          </div>
+          <div class="box b">
+            <h3 align="center">Fried Turkey Burger</h3>
+            <img src="https://assets.epicurious.com/photos/5748b2ed5a5fbbae31ae4af9/6:4/w_620%2Ch_413/shutterstock_148839410.jpg" height=300 align="center">
+            <p>Ingredients:</p>
+            <ul>
+              <li>Turkey meat</li>
+              <li>Red onion</li>
+              <li>Vegetables</li>
+            </ul>
+            <p>This burger contains the following:</p>
+            <ul class="allergy-info">
+              <li>Gluten</li>
+              <li>Lactose</li>
+              <li>Meat</li>
+            </ul>
+          </div>
+          <div class="box c">
+            <h3 align="center">A Double w/ Cheese</h3>
+            <img src="data:image/jpeg;base64,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" height=300 align="center">
+            <p>Ingredients:</p>
+            <ul>
+              <li>Red meat</li>
+              <li>Cheese</li>
+              <li>Pickles</li>
+            </ul>
+            <p>This burger contains the following:</p>
+            <ul class="allergy-info">
+              <li>Gluten</li>
+              <li>Lactose</li>
+              <li>Meat</li>
+            </ul>
+          </div>
       </section>
-      <section>
+      <section id="customer-info">
         <h2>Customer information</h2>
         <p>Please provide the necessary information for your order to be delivered</p>
         <h3>Delivery information:</h3>
