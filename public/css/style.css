@@ -13,12 +13,13 @@ tr {
 
 #menu {
     background-image: linear-gradient(#ff0000, #ffff00);
-    color: #000000;
+    color: #ffffff;
     border: 5px dashed #000000;
 }
 
 #customer-info {
     border: 5px dashed #000000;
+    background-image: linear-gradient(yellow, green);
 }
 
 button:hover {
@@ -77,6 +78,7 @@ header {
     padding: 1px;
     margin-top: 5px;
     background-color: #9c9fa3;
+    background-image: linear-gradient(green, purple);
     border-radius: 10px;
 }
 
