@@ -27,14 +27,17 @@ function MenuItem(name, kcal, gluten, lactose, stock, img){
   }
 }
 
-// let burgerA = new MenuItem("Super Mac", 1000, true, true, 10, "https://gunaxin.com/wp-content/uploads/gallery/big-burgers/big_burgers_006.jpg");
-// let burgerB = new MenuItem("Floss Burger", 500, true, true, 10, "https://media.giphy.com/media/ctNJp7PTRuRNTREyTj/giphy.gif");
-// let burgerC = new MenuItem("Vego Burger", 700, false, false, 10, "http://www.freakingnews.com/pictures/107000/Green-Burger--107341.jpg");
-// let burgerD = new MenuItem("Flugsvampen", 700, true, false, 10, "http://media.graytvinc.com/images/810*526/burger-king-angry-whopper-cnn.jpg");
-// let burgerE = new MenuItem("Gluten Tag", 700, false, true, 10, "https://www.mommyhatescooking.com/wp-content/uploads/2012/03/burger2.jpg");
+function createBurgers(){
+  let burgerA = new MenuItem("Super Mac", 1000, true, true, 10, "https://gunaxin.com/wp-content/uploads/gallery/big-burgers/big_burgers_006.jpg");
+  let burgerB = new MenuItem("Floss Burger", 500, true, true, 10, "https://media.giphy.com/media/ctNJp7PTRuRNTREyTj/giphy.gif");
+  let burgerC = new MenuItem("Vego Burger", 700, false, false, 10, "http://www.freakingnews.com/pictures/107000/Green-Burger--107341.jpg");
+  let burgerD = new MenuItem("Flugsvampen", 700, true, false, 10, "http://media.graytvinc.com/images/810*526/burger-king-angry-whopper-cnn.jpg");
+  let burgerE = new MenuItem("Gluten Tag", 700, false, true, 10, "https://www.mommyhatescooking.com/wp-content/uploads/2012/03/burger2.jpg");
 
-// let burgers = [burgerA, burgerB, burgerC, burgerD, burgerE];
+  let burgers = [burgerA, burgerB, burgerC, burgerD, burgerE];
 
+  return burgers;
+}
 // let myElement = document.getElementById("js-loop");
 // for (i in burgers){
 //   if (burgers[i].stock > 0){
