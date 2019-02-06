@@ -12,9 +12,9 @@ tr {
 }
 
 #menu {
-    background-color: #000000;
-    color: #ffffff;
-    border: 5px dashed #ffffff;
+    background-image: linear-gradient(#ff0000, #ffff00);
+    color: #000000;
+    border: 5px dashed #000000;
 }
 
 #customer-info {
@@ -66,25 +66,30 @@ header {
     vertical-align: top;
     /*grid-template-columns: 33% 33% 33%;*/
     grid-gap: 0px;
-    padding: 0px 5%;
+    padding: 0px 2%;
     margin: 0px;
     align-self: center;
 }
 
-.box {
+.box, .burger-info {
     padding: 20px;
-    margin: 0px;
+    margin: 0px 10px;
     padding: 1px;
+    margin-top: 5px;
+    background-color: #9c9fa3;
+    border-radius: 10px;
 }
 
-.a {
-    grid-column: 1;
+#checkbox {
+    height: 40px;
 }
 
-.b {
-    grid-column: 2;
+.burgerSelect {
+    height: 20px;
+    width: 20px;
+    margin: 3%;
 }
 
-.c {
-    grid-column: 3;
+.displayInfo {
+    font-weight: bold;
 }
